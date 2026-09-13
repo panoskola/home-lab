@@ -58,9 +58,7 @@ net start netlogon
 
 3. The errors I was chasing were already fixed. dcdiag reads the System event log and reports old entries too. All of them carried the same timestamp, from the window when the machine was still misconfigured. Rule: read the timestamp before chasing the error.
 
-4. Windows 11 refused to install — "The PC must support TPM 2.0". Generation 2 Hyper-V VMs do provide a virtual TPM, but it is disabled by default. Settings → Security → Enable Trusted Platform Module, with the VM powered off.
-
-5. Renaming the computer and joining the domain in one step. I did both in the same dialog. The join succeeded, but was immediately followed by "Changing the Primary Domain DNS name … failed", because a rename does not take effect until the machine reboots. Everything was correct after the restart. Rule: rename first, reboot, then join the domain.
+4. Renaming the computer and joining the domain in one step. I did both in the same dialog. The join succeeded, but was immediately followed by "Changing the Primary Domain DNS name … failed", because a rename does not take effect until the machine reboots. Everything was correct after the restart. Rule: rename first, reboot, then join the domain.
 
 What I took away
 Active Directory does not work without DNS: a client locates the domain controller by querying DNS for SRV records. That is why the client points at the DC and not at the router.
