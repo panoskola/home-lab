@@ -26,14 +26,14 @@ From CLIENT01:
 
 nltest /dsgetdc:lab.local
 
-![Promotion σε DC](nltest_lab.local.png)
-
 DC: \\DC01.lab.local
 Address: \\192.168.10.10
 Dom Name: lab.local
 Forest Name: lab.local
 Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_DC DNS_DOMAIN DNS_FOREST ...
 The command completed successfully
+
+![Promotion σε DC](nltest_lab.local.png)
 
 Additional checks:
 
