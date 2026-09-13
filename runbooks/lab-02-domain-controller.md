@@ -22,7 +22,7 @@ Network: IP 192.168.10.50, mask 255.255.255.0, gateway 192.168.10.1, DNS 192.168
 sysdm.cpl → Change → Member of Domain → lab.local → credentials of LAB\Administrator → reboot.
 Verification
 
-![Promotion σε DC](Active Directory Users and Computers.png)
+![Promotion σε DC](ActiveDirectoryUsersandComputers.png)
 
 From CLIENT01:
 
