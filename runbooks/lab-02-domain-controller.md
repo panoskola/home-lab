@@ -26,6 +26,8 @@ From CLIENT01:
 
 nltest /dsgetdc:lab.local
 
+![Promotion σε DC](nltest_lab.local.png)
+
 DC: \\DC01.lab.local
 Address: \\192.168.10.10
 Dom Name: lab.local
